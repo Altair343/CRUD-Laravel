@@ -1,0 +1,73 @@
+.formulario{
+    width: 100%;
+    overflow: auto;
+
+    
+}
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .6rem;
+
+    &__label{
+        font-size: .8em;
+        padding: .5rem 0;
+        color: rgb(128, 128, 128);
+    }
+
+    &__input{
+        width: 100%;
+        outline-color: $color-primary;
+        outline-width: thick;
+        border: .5px solid $color-bar-input;
+        padding: 1rem;
+    }
+
+    &__select{
+        width: 100%;
+        outline-color: $color-primary;
+        outline-width: thick;
+        border: .5px solid $color-bar-input;
+        padding: .7rem;
+    }
+
+    &__bt{
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: .6rem;
+
+        &__button{
+            cursor: pointer;
+            color: #fff;
+            font-size: .8em;
+            padding: .8em 1.4em;
+            border: none;
+            outline:none;
+            border-radius: 5px;
+            background-color: $color-primary;
+
+            &:hover{
+                background-color: $color-btn-action;
+            }
+            
+        }}
+
+    &:nth-child(2){
+        padding-bottom: 0;
+    }
+
+    .contentCount{
+        display: flex;
+        justify-content: flex-end;
+
+        .count{
+            margin: 0;
+            padding-top: .3rem;
+            font-size: .8em;
+            color: $color-primary;
+        }
+    }
+
+   
+}
