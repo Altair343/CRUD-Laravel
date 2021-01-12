@@ -1,0 +1,31 @@
+$max-width: 1200px;
+
+// Paleta de colores:
+$color-background: rgb(253, 253, 253);
+$color-link:  #646264;
+$color-link-hover: rgb(248, 248, 248);
+$color-bar: #BFC8D0;
+$color-bar-input:#d2d7db;
+$color-primary: #198CFF;
+$color-btn-action: #5fa9f3;
+
+:root {
+  --text-colorModal: #4C5157;
+}
+
+//radius
+$radius-modal: 6px;
+
+//Breakpoints de resoluciones
+$breakpoints: (
+  l: 960px,
+);
+
+
+// Variables de apilamiento (z-index)
+:root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-fixed: 100;
+    --z-modal: 1000;
+  }

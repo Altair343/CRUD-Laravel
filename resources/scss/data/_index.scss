@@ -1,0 +1,190 @@
+.contentMain{
+    width: 100%;
+    height: 100vh;;
+    background-color: $color-background;
+    display: grid;
+    grid-template-columns: 1.2fr  5fr;
+
+    .contentData{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .title{
+            font-size: 1.8em;
+            padding: 2rem 0 0 1.5rem;
+
+            h1{
+                margin: 0;
+            }
+            .slogan{
+                font-size: .5em;
+                color: $color-link;
+
+                p{
+                    margin: 0;
+                    margin: .6rem 0;
+                }
+            }
+        }
+
+        .content_sub-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid $color-bar;
+
+            .add{
+                padding-right: 2rem;
+            }
+
+        }
+
+        .contentNotes{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            display: grid;
+            padding: 0 1.5rem;
+            padding-top: 1rem;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows:repeat(3,1fr);
+            grid-gap: .4rem;
+
+            .contentCard{
+                width: 100%;
+                height: auto;
+                padding: .5rem;
+                border-radius: 8px;
+                position: relative;
+
+                &.link{
+                    background-color: #FFC976;
+                }
+
+                &.recort{
+                    background-color: #FE9C75;
+                }
+
+                &__title{
+                    display: flex;
+
+                    h2{
+                        margin: 0;
+                        font-size: 1em;
+                    }
+                }
+
+                &__body{
+                    padding: .5rem 0;
+                    padding-bottom: 1.5rem;
+                    font-size: .9em;
+
+                    p{
+                        margin: 0;
+                    }
+                }
+
+                &__footer{
+                    width: 90%;
+                    padding: .5rem 0;
+                    padding-bottom: 0;
+                    font-size: .7em;
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    bottom: .5rem;
+                    
+                    .link-subMenu{
+                        .fas{
+                            font-size: 1rem;
+                        }
+                    }
+                    
+
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+
+            @include fromMax(l) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+.link-subMenu:hover .content-options{
+    display: block;
+}
+
+.content-options{
+    display: none;
+    position: absolute;
+    transform: translate(-.6rem,-3.8rem);
+    background-color: #fff;
+    border-radius: 5px;
+    
+    .main-options{
+        list-style: none;
+        padding: .5rem;
+        margin: 0;
+
+        &__item{
+            padding: .2rem 0;
+        }
+
+        &__item-link{
+            color: #000;
+            font-size: .5rem;
+
+
+        }
+        
+    }
+
+
+}
+
+.sub-menu{
+    width: 100%;
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style: none;
+    display: flex;
+
+    &__item{
+        margin: 1rem 1rem;
+    
+        &:nth-child(1){
+            margin-left: 0;
+        }
+    }
+
+    &__link{
+        color: $color-link;
+        padding-bottom: 1rem;
+
+        &:hover{
+            color: $color-primary;
+        }
+
+        &.select{
+            color: $color-primary;
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+}
+.add{
+    color: $color-link;
+    cursor: pointer;
+    
+    &:hover{
+        color: $color-primary;
+    }
+}
+
+.link-subMenu{
+    cursor: pointer;
+}
