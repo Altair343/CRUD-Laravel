@@ -20,20 +20,20 @@ Descargamos el proyecto y lo descomprimimos.
 Abres la consola de comando dentro del proyecto.
 
 ejecutamos el comando: 
-composer install
+- composer install
 
 Renombramos el archivo .env.example a .env
 
 ejecutamos el comando: 
-php artisan key:generate
+- php artisan key:generate
 
 creamos una base de datos, para este ejemplo se utilizó una de MySQL utilizando XAMP posteriormente configuramos las credenciales de la base de datos en el archivo .env
 
 ejecutamos el siguiente comando para correr las migraciones
-php artisan migrate
+- php artisan migrate
 
 finalmente ejecutamos el siguiente comando para iniciar el servidor
-php artisan serve
+- php artisan serve
 
 o con parámetros
-php artisan serve --host=0.0.0.0 --port=8000
+- php artisan serve --host=0.0.0.0 --port=8000
