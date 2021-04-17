@@ -17,7 +17,7 @@ La base de datos es MySQL
 
 Descargamos el proyecto y lo descomprimimos.
 
-Abres la consola de comando dentro del proyecto.
+Abrimos la consola de comando dentro del proyecto.
 
 ejecutamos el comando: 
 - composer install
